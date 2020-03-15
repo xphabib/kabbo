@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kabbo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <!-- Header Area -->
+  <header class="main_header_area">
+    <div class="searchForm">
+      <form action="index.html#" class="row">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="flaticon-search"></i></span>
+          <input type="search" name="search" class="form-control" placeholder="Type & Hit Enter">
+          <span class="input-group-addon form_hide"><i class="flaticon-close"></i></span>
+        </div>
+      </form>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <%= image_tag 'logo.png' %>
+      </a>
+      <!-- Small Divice Menu-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"  aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <!-- Right Nav bar -->
+      <!-- Right Nav bar -->
+      <ul class="right_nav">
+        <li class="dropdown">
+          <a class="nav-link dropdown-toggle cart" href="index.html" role="button" data-toggle="dropdown"><i class="flaticon-shopping-cart"></i></a>
+          <ul class="dropdown-menu cart_dopdown">
+            <li>No products in the cart.</li>
+          </ul>
+        </li>
+        <li><a href="index.html#" class="nav_searchFrom"><i class="flaticon-search"></i></a></li>
+        <li><a href="index.html#" class="theme_btn">Sign in</a></li>
+      </ul>
+      <!-- Left Nav bar -->
+      <div class="collapse navbar-collapse navbar_supported">
+        <ul class="navbar-nav">
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle active" href="index.html" role="button" data-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html" class="active">Home Version 1</a></li>
+              <li><a href="index-2.html">Home Version 2</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-toggle="dropdown">Protfolio</a>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio.html">Portfolio Version 1</a></li>
+              <li><a href="portfolio-2.html">Portfolio Version 2</a></li>
+              <li><a href="portfolio-3.html">Portfolio Version 3</a></li>
+              <li><a href="portfolio-4.html">Portfolio Version 4</a></li>
+              <li><a href="portfolio-5.html">Portfolio Version 5</a></li>
+              <li><a href="portfolio-single.html">Portfolio Single v1</a></li>
+              <li><a href="portfolio-single-2.html">Portfolio Single v2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="services-single.html">Services Single</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a href="pricing.html">Pricing</a></li>
+              <li class="dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Shop Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="shop-single.html">Shop Single</a></li>
+                </ul>
+              </li>
+              <li><a href="coming-soon.html">Coming Soon</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="blog-single.html">Blog Single</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Area -->
+
+  <!-- Banner Area -->
+  <section class="banner_area" id="parallax">
+    <img src=<%= asset_path('bannar-shap-1.png') %> alt="" class="layer layer_1" data-depth="0.10">
+    <img src=<%= asset_path('bannar-shap-2.png') %> alt="" class="layer layer_2" data-depth="0.35">
+    <div class="container">
+      <h2 class="wow fadeInUp">We Are Creative Agency, Create &amp; Make Your Dream</h2>
+      <p class="wow fadeInUp" data-wow-delay="0.3s">A team of 100+ experienced developers and designers, ready to help you build your web and mobile applications.</p>
+      <a href="index.html#" class="theme_btn wow fadeInUp" data-wow-delay="0.5s">Get Started</a>
+      <img src=<%= asset_path('bannar-img.png') %> alt="" class="bannar_img wow fadeInRight">
+    </div>
+    <a class="popup-youtube wow fadeInUp video_area" href="https://player.vimeo.com/video/142874198">
+      <img src=<%= asset_path('bannar-video-bg.png') %> alt="">
+      <i class="fa fa-play-circle "></i>
+    </a>
+  </section>
+  <!-- End Banner Area -->
+
+  <!-- Fantasy Area -->
+  <section class="fantasy_area">
+    <div class="row fantasy_inner">
+      <div class="col-xl-5 col-lg-12 fantasy_tittle">
+        <h2>We Are Fantasy We've got you covered on</h2>
+        <a href="index.html#" class="theme_btn">Learn  more</a>
+      </div>
+      <div class="col-xl-7 col-lg-12 row fantasy_items">
+        <div class="col-md-6 wow fadeIn">
+          <div class="fantasy">
+            <span class="icons"><i class="far fa-clone"></i></span>
+            <a href="index.html#">Product Design</a>
+            <p>Every product must make a statement and we’re ready to create it with holistic approach to design.</p>
+            <ul class="fantasy_list">
+              <li>JavaScript Development</li>
+              <li>Django &amp; DjangoCMS </li>
+              <li>iOS App Development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+          <div class="fantasy fantasy_2">
+            <span class="icons"><i class="fa fa-moon-o"></i></span>
+            <a href="index.html#">Creative Web Solution</a>
+            <p>We translate your business goals <br> and objectives into insightful UX, remarkable UI and distinctive </p>
+            <ul class="fantasy_list">
+              <li>JavaScript Development</li>
+              <li>Django &amp; DjangoCMS </li>
+              <li>iOS App Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fantasy Area -->
+
+  <!-- Countarup Area -->
+  <section class="countarup_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="countraup_item mt">
+            <h4>Total Invest</h4>
+            <h3>$<b class="counter">15</b>M</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="countraup_item">
+            <h4>Project Done</h4>
+            <h3><b class="counter">25</b>K+</h3>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="countraup_item mt_2">
+            <h4>Offices</h4>
+            <h3><b>0</b><b class="counter">4</b></h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="countraup_item mt_3">
+            <h4>Happy Client</h4>
+            <h3><b class="counter">90</b>K</h3>
+          </div>
+        </div>
+        <h5 class="col-lg-5 col-md-4 col-sm-6"><span><b class="counter">12</b>K+</span> DAILY STANDUPS </h5>
+        <h5 class="col-lg-2 col-md-4 col-sm-6"><span><b class="counter">1</b>M+</span> COMMITS</h5>
+        <h5 class="col-lg-5 col-md-4 col-sm-6"><span><b class="counter">10</b>K+</span> USER STORIES</h5>
+      </div>
+    </div>
+  </section>
+  <!-- End Countarup Area -->
+
+  <!-- About the Agency Area -->
+  <section class="about_agency_area">
+    <div class="round_shap"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 agency_contant">
+          <div class="icons"><i class="far fa-gem"></i></div>
+          <h4>About the Agency</h4>
+          <h2>Insights and resources to help drive your business forward faster.</h2>
+          <p>We build results-oriented brand strategies and continually refine your campaigns for the greatest outcome. From full-scale digital marketing and advertising strategy, right through to our precise execution and reporting...that's right, we've got you covered</p>
+          <a href="index.html#" class="theme_btn">Read Success Story</a>
+        </div>
+        <div class="col-lg-6">
+          <%= image_tag 'about-agency.png' %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About the Agency Area -->
+
+  <!-- Fantasy Area -->
+  <section class="fantasy_area fa_2">
+    <div class="row fantasy_inner">
+      <div class="col-xl-5 col-lg-12 fantasy_tittle">
+        <h4>OUR SERVICES</h4>
+        <h2>Build lasting relationships with customers</h2>
+        <a href="services.html" class="theme_btn">Learn  more</a>
+      </div>
+      <div class="col-xl-7 col-lg-12 row fantasy_items">
+        <div class="col-md-6 wow fadeIn">
+          <div class="fantasy fantasy_4">
+            <span class="icons"><i class="far fa-clone"></i></span>
+            <a href="services-single.html">Interface Design</a>
+            <p>Every product must make a statement and we’re ready to create it with holistic approach to design.</p>
+          </div>
+        </div>
+        <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+          <div class="fantasy fantasy_2">
+            <span class="icons"><i class="fas fa-bezier-curve"></i></span>
+            <a href="services-single.html">Creative Web Solution</a>
+            <p>We translate your business goals <br> and objectives into insightful UX, remarkable UI and distinctive </p>
+          </div>
+        </div>
+        <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+          <div class="fantasy fantasy_3">
+            <span class="icons"><i class="fab fa-google-drive"></i></span>
+            <a href="services-single.html">Business Analysis</a>
+            <p>Every product must make a statement and we’re ready to create it with holistic approach to design.</p>
+          </div>
+        </div>
+        <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+          <div class="fantasy">
+            <span class="icons"><i class="fas fa-feather-alt"></i></span>
+            <a href="services-single.html">Design &amp; Development</a>
+            <p>Business Analysis is the practice of enabling change in an organizational context, by defining needs </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fantasy Area -->
+
+  <!-- Testimonial Area -->
+  <section class="testimonial_area">
+    <h4>Testimonial</h4>
+    <h2>What Our core client say ?</h2>
+    <div class="carousel slide testimonial_slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial_content">
+            <p>Our approach has empowered local, national, and global brands to grow their businesses and achieve a competitive advantage  and we can do the same for you.</p>
+            <div class="media">
+              <%= image_tag 'testimonial-1.jpg' %>
+              <div class="media-body">
+                <a href="index.html#">Emran Khan</a>
+                <h6>Frontend Developer</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial_content">
+            <p>Every product must make a statement and we’re ready to create it with holistic approach to design. create it with holistic approach to design.</p>
+            <div class="media">
+              <%= image_tag 'testimonial-3.jpg' %>
+              <div class="media-body">
+                <a href="index.html#">Jesi Azaira</a>
+                <h6>Creative Web Solution</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial_content">
+            <p>We translate your business goals and objectives into insightful UX, remarkable UI and distinctive competitive advantage  and we can do the same for you.</p>
+            <div class="media">
+              <%= image_tag 'testimonial-4.jpg' %>
+              <div class="media-body">
+                <a href="index.html#">Mahfuz Riad</a>
+                <h6>Ui Designer &amp; CEO</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial_content">
+            <p>Business Analysis is the practice of enabling change in an organizational context, by defining needs enabling change in an organizational context, by defining needs</p>
+            <div class="media">
+              <%= image_tag 'testimonial-5.jpg' %>
+              <div class="media-body">
+                <a href="index.html#">Mahfuz Riad</a>
+                <h6>Ui Designer &amp; CEO</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav_control">
+        <a class="control-prev" href="http://themazine.com/html/kabbo/.testimonial_slide" role="button" data-slide="prev">
+          <i class="flaticon-back"></i>
+        </a>
+        <a class="control-next" href="http://themazine.com/html/kabbo/.testimonial_slide" role="button" data-slide="next">
+          <i class="flaticon-next"></i>
+        </a>
+      </div>
+    </div>
+    <ul class="indicators">
+      <li data-target=".testimonial_slide" data-slide-to="0" class="testimonial_1">
+        <%= image_tag 'testimonial-2.jpg' %>
+      </li>
+      <li data-target=".testimonial_slide" data-slide-to="1" class="testimonial_2">
+        <%= image_tag 'testimonial-3.jpg' %>
+      </li>
+      <li data-target=".testimonial_slide" data-slide-to="2" class="testimonial_3">
+        <%= image_tag 'testimonial-4.jpg' %>
+      </li>
+      <li data-target=".testimonial_slide" data-slide-to="2" class="testimonial_4">
+        <%= image_tag 'testimonial-5.jpg' %>
+      </li>
+      <li class="round_shap"></li>
+    </ul>
+  </section>
+  <!-- End Testimonial Area -->
+
+  <!-- Agency Task Area -->
+  <section class="protfolio_area">
+    <div class="container coustom_container">
+      <div class="tittle">
+        <%= image_tag 'tree.png' %>
+        <h2>We have done lot of Agency Task</h2>
+        <div class="complete_task">
+          <h1>05<small>k</small><span>+</span></h1>
+          <a href="index.html#">Agency Task Complete</a>
+        </div>
+      </div>
+      <ul class="protfoli_filter">
+        <li class="active" data-filter="*"><a href="index.html#">All Works</a></li>
+        <li data-filter=".creative"><a href="index.html#">Creative</a></li>
+        <li data-filter=".agency"><a href="index.html#">Agency</a></li>
+        <li data-filter=".ui_ux"><a href="index.html#">Ui/Ux</a></li>
+        <li data-filter=".development"><a href="index.html#">Website Design </a></li>
+        <li data-filter=".other"><a href="index.html#">Other</a></li>
+      </ul>
+    </div>
+    <div class="row protfoli_inner">
+      <div class="col-md-4 col-sm-6 creative ui_ux agency">
+        <a href="index.html#" class="work-items">
+          <%= image_tag 'protfoilo/portfolio-1.jpg' %>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 development other agency">
+        <a href="index.html#" class="work-items">
+          <%= image_tag 'protfoilo/portfolio-2.jpg' %>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 creative ui_ux agency">
+        <a href="index.html#" class="work-items">
+          <%= image_tag 'protfoilo/portfolio-3.jpg' %>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 agency development other">
+        <a href="index.html#" class="work-items">
+          <%= image_tag 'protfoilo/portfolio-4.jpg' %>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 creative agency agency other">
+        <a href="index.html#" class="work-items">
+          <%= image_tag 'protfoilo/portfolio-5.jpg' %>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 ui_ux agency development">
+        <a href="index.html#" class="work-items">
+          <%= image_tag 'protfoilo/portfolio-6.jpg' %>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Agency Task Area -->
+
+  <!-- Our blog posts Area -->
+  <section class="blog_posts_area">
+    <h2>Our blog posts</h2>
+    <div class="row blog_inner">
+      <!-- Blog_item -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog_item">
+          <a href="blog-single.html" class="blog_img">
+            <%= image_tag 'blog/blog-post-1.jpg' %>
+            <span>24 <small>Sep</small></span>
+          </a>
+          <div class="blog_contant">
+            <a href="blog-single.html">A good content strategy can help engage your consumers</a>
+            <p>A good content strategy can help engage your consumers and position your company as an effective publisher in your industry. In turn, this will play a role in increasing brand recognition, traffic to your website, lead conversions, and customer loyalty</p>
+          </div>
+        </div>
+      </div>
+      <!-- Blog_item -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog_item">
+          <a href="blog-single.html" class="blog_img">
+            <%= image_tag 'blog/blog-post-2.jpg' %>
+            <span>24 <small>Sep</small></span>
+          </a>
+          <div class="blog_contant">
+            <a href="blog-single.html">A good content strategy can help engage your consumers</a>
+            <p>A good content strategy can help engage your consumers and position your company as an effective publisher in your industry. In turn, this will play a role in increasing brand recognition, traffic to your website, lead conversions, and customer loyalty</p>
+          </div>
+        </div>
+      </div>
+      <!-- Blog_item -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog_item">
+          <a href="blog-single.html" class="blog_img">
+            <%= image_tag 'blog/blog-post-3.jpg' %>
+            <span>24 <small>Sep</small></span>
+          </a>
+          <div class="blog_contant">
+            <a href="blog-single.html">A good content strategy can help engage your consumers</a>
+            <p>A good content strategy can help engage your consumers and position your company as an effective publisher in your industry. In turn, this will play a role in increasing brand recognition, traffic to your website, lead conversions, and customer loyalty</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Our blog posts Area -->
+
+  <!-- Contact Us Area -->
+  <section class="contact_us">
+    <div class="container">
+      <div class="contact_inner">
+        <h2>We are creatives, so it might be about minions and stuff</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+        <a href="contact.html" class="theme_btn">Contact us</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Us Area -->
+
+  <!-- Footer Area -->
+  <footer class="footer_area">
+    <img src=<%= asset_path('footer-shap.png') %> alt="" class="shap">
+    <div class="round_shap"></div>
+    <div class="footer_inner row">
+      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 footer_logo wow fadeIn">
+        <a href="index.html">
+          <%= image_tag 'logo.png' %>
+        </a>
+        <div class="language">
+          <h6>Language :</h6>
+          <div class="language_select">
+            <select class="post_select">
+              <option>English (UK)</option>
+              <option>English (US)</option>
+              <option>Bangla (BN)</option>
+            </select>
+          </div>
+        </div>
+        <ul class="footer_menu">
+          <li><a href="index.html#">CAREERS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="index.html#">PRIVACY</a></li>
+        </ul>
+        <ul class="footer_social">
+          <li><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="index.html#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="index.html#"><i class="fa fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer_widget fw_1 col-xl-2 col-lg-3 col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+        <h4>Core Link</h4>
+        <ul class="footer_nav">
+          <li><a href="index.html#">Team Member</a></li>
+          <li><a href="index.html#">Pricing plan</a></li>
+          <li><a href="index.html#">Google Map</a></li>
+          <li><a href="index.html#">Apps store</a></li>
+          <li><a href="about.html">About Company</a></li>
+        </ul>
+      </div>
+      <div class="footer_widget fw_2 col-xl-2 col-lg-3 col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+        <h4>Information</h4>
+        <address>
+          113 momo Street, bd 721 <br>NY 20012
+          <a href="index.html#" class="email">kabbohelp@gmail.com</a>
+          <a href="index.html#" class="phone">+88 (0) 29292162</a>
+        </address>
+      </div>
+      <div class="footer_widget fw_3 col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
+        <h4>Stay In  Loop</h4>
+        <p>Subscribe to receive biweekly tips on creative automation and digital advertising!</p>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="What’s Your email">
+          <div class="input-group-append">
+            <span class="input-group-text"><i class="fas fa-caret-right"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer_widget fw_4 col-xl-2 col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.8s">
+        <h4>About Company</h4>
+        <ul class="footer_nav">
+          <li><a href="index.html#">How it works</a></li>
+          <li><a href="index.html#">Development </a></li>
+          <li><a href="index.html#">Digital markeing </a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container btn_container">
+      <a href="index.html#" class="theme_btn apple"><i class="fab fa-apple"></i>App Store</a>
+      <a href="index.html#" class="theme_btn"><i class="fab fa-google-play"></i>Play Store</a>
+    </div>
+    <p class="copy_right">© 2018 All rights reserved</p>
+  </footer>
+  <!-- End Footer Area -->
+
+  <!-- Scroll Top Button -->
+  <button class="scroll-top">
+    <i class="fa fa-angle-double-up"></i>
+  </button>
+
+  <!-- Preloader -->
+<!--  <div class="preloader"></div>-->
+  </body>
+</html>
